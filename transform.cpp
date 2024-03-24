@@ -122,24 +122,24 @@ Shape transform::scale(int s)
 	switch (shape.getType())
 	{
 	case Shape::line:
-		shape.A.x /= s; shape.A.y /= s;
-		shape.B.x /= s; shape.B.y /= s;
+		shape.A /= s;
+		shape.B /= s;
 		break;
 	case Shape::sqr:
-		shape.A.x /= s; shape.A.y /= s;
-		shape.B.x /= s; shape.B.y /= s;
-		shape.C.x /= s; shape.C.y /= s;
-		shape.D.x /= s; shape.D.y /= s;
+		shape.A /= s;
+		shape.B /= s;
+		shape.C /= s;
+		shape.D /= s;
 		break;
 	case Shape::cube:
-		shape.A.x /= s; shape.A.y /= s; shape.A.z /= s;
-		shape.B.x /= s; shape.B.y /= s; shape.B.z /= s;
-		shape.C.x /= s; shape.C.y /= s; shape.C.z /= s;
-		shape.D.x /= s; shape.D.y /= s; shape.D.z /= s;
-		shape.E.x /= s; shape.E.y /= s; shape.E.z /= s;
-		shape.F.x /= s; shape.F.y /= s; shape.F.z /= s;
-		shape.G.x /= s; shape.G.y /= s; shape.G.z /= s;
-		shape.H.x /= s; shape.H.y /= s; shape.H.z /= s;
+		shape.A /= s;
+		shape.B /= s;
+		shape.C /= s;
+		shape.D /= s;
+		shape.E /= s;
+		shape.F /= s;
+		shape.G /= s;
+		shape.H /= s;
 		break;
 	}
 

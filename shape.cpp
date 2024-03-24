@@ -25,9 +25,9 @@ Shape::Shape(int _type, Point _A, Point _B, Point _C, Point _D, Point _E, Point 
 	}
 
 	// стороны фигуры
-	int a = abs(A.x - B.x);
-	int b = abs(A.y - B.y);
-	int c = abs(A.z - B.z);
+	int a = abs(A.x - B.x) + abs(A.y - B.y);
+	int b = abs(A.x - D.x) + abs(A.y - D.y);
+	int c = abs(A.x - E.x) + abs(A.x - D.x) + abs(A.z - D.z);
 	// считаем площадь фигуры
 	switch (type)
 	{
