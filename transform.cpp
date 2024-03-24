@@ -9,17 +9,17 @@ Shape transform::shift(int m, int n, int k)
 {
 	switch (shape.getType())
 	{
-	case Shape::line:
+	case 0:
 		shape.A.x += m; shape.A.y += n;
 		shape.B.x += m; shape.B.y += n;
 		break;
-	case Shape::sqr:
+	case 1:
 		shape.A.x += m; shape.A.y += n;
 		shape.B.x += m; shape.B.y += n;
 		shape.C.x += m; shape.C.y += n;
 		shape.D.x += m; shape.D.y += n;
 		break;
-	case Shape::cube:
+	case 2:
 		shape.A.x += m; shape.A.y += n; shape.A.z += k;
 		shape.B.x += m; shape.B.y += n; shape.B.z += k;
 		shape.C.x += m; shape.C.y += n; shape.C.z += k;
@@ -37,17 +37,17 @@ Shape transform::scaleX(int a)
 {
 	switch (shape.getType())
 	{
-	case Shape::line:
+	case 0:
 		shape.A.x *= a;
 		shape.B.x *= a;
 		break;
-	case Shape::sqr:
+	case 1:
 		shape.A.x *= a;
 		shape.B.x *= a;
 		shape.C.x *= a;
 		shape.D.x *= a;
 		break;
-	case Shape::cube:
+	case 2:
 		shape.A.x *= a;
 		shape.B.x *= a;
 		shape.C.x *= a;
@@ -65,17 +65,17 @@ Shape transform::scaleY(int d)
 {
 	switch (shape.getType())
 	{
-	case Shape::line:
+	case 0:
 		shape.A.y *= d;
 		shape.B.y *= d;
 		break;
-	case Shape::sqr:
+	case 1:
 		shape.A.y *= d;
 		shape.B.y *= d;
 		shape.C.y *= d;
 		shape.D.y *= d;
 		break;
-	case Shape::cube:
+	case 2:
 		shape.A.y *= d;
 		shape.B.y *= d;
 		shape.C.y *= d;
@@ -93,17 +93,17 @@ Shape transform::scaleZ(int e)
 {
 	switch (shape.getType())
 	{
-	case Shape::line:
+	case 0:
 		shape.A.z *= e;
 		shape.B.z *= e;
 		break;
-	case Shape::sqr:
+	case 1:
 		shape.A.z *= e;
 		shape.B.z *= e;
 		shape.C.z *= e;
 		shape.D.z *= e;
 		break;
-	case Shape::cube:
+	case 2:
 		shape.A.z *= e;
 		shape.B.z *= e;
 		shape.C.z *= e;
@@ -121,17 +121,17 @@ Shape transform::scale(int s)
 {
 	switch (shape.getType())
 	{
-	case Shape::line:
+	case 0:
 		shape.A /= s;
 		shape.B /= s;
 		break;
-	case Shape::sqr:
+	case 1:
 		shape.A /= s;
 		shape.B /= s;
 		shape.C /= s;
 		shape.D /= s;
 		break;
-	case Shape::cube:
+	case 2:
 		shape.A /= s;
 		shape.B /= s;
 		shape.C /= s;

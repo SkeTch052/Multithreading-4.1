@@ -8,7 +8,4 @@ struct Point {
 	Point operator /= (const int& val) {
 		return Point{ x /= val, y /= val, z /= val };
 	}
-	//Point operator + (const Point& p) {
-	//	return Point{ x + p.x, y + p.y, z + p.z };
-	//}
 };
