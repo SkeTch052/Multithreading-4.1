@@ -132,6 +132,7 @@
     <ClCompile Include="transform.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="point.h" />
     <ClInclude Include="shape.h" />
     <ClInclude Include="transform.h" />
   </ItemGroup>
